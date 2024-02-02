@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+    font-family: sans-serif;
+    background: #000;
+    color: #fff;
+  }
+  
+  .content {
+    padding: 4rem;
+  }
+  
+  section {
+    border: 2px solid white;
+    margin: 20px 0;
+    padding: 20px;
+  }
+  
+  section h1 {
+    margin: 10px 0;
+  }
+  
+  .scroll-indicator {
+    height: 5px;
+    width: calc(100% - 6em);
+    position: fixed;
+    top: 10px;
+    left: 3em;
+    border-radius: 3px;
+  }
+  
+  .scroll-indicator .progress {
+    height: 100%;
+    width: 0;
+    border-radius: 3px;
+    /* https://www.grabient.com/ */
+    background: linear-gradient(30deg, #21d4fd, #b721ff);
+    transition: width 0.1s;
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    border-bottom: solid 1px #6d7584;
+    background-color: #273243;
+  }
+  
+  nav a {
+    display: inline-block;
+    min-width: 9rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: solid 1px rgb(22, 22, 22);
+    text-align: center;
+    text-decoration: none;
+    color: #1b1b1b;
+  }
+  
+  nav a[aria-current='page'] {
+    color: #000;
+    background-color: #d4d4d4;
+  }
