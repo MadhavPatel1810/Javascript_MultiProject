@@ -1,6 +1,7 @@
 //**** When try to execute only js file in terminal without html ****//
 //***** USE COMMAND: node promises.js ****//
 //***** USE COMMAND: node <file path> ****//
+//***** Above command is not worked on fetch or axis code. because fetch or axios not added by default in node.js*****//
 
 const promiseOne = new Promise(function (resolve, reject) {
   //Do an async task
@@ -77,3 +78,24 @@ async function consumePromiseFive() {
   }
 }
 consumePromiseFive();
+
+async function getAllUsers() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const data = await response.json();
+    console.log("Result : ", data);
+  } catch (error) {
+    console.log("E : ", error);
+  }
+}
+getAllUsers();
+fetch(requestUrl)
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log("Error :", error);
+  });

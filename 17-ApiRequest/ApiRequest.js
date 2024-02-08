@@ -11,7 +11,7 @@ xhr.onreadystatechange = function (e) {
   if (xhr.readyState === 4) {
     const res = JSON.parse(this.responseText);
     if (!res?.message) {
-      profileImg.src = res?.avatar_url;
+      // profileImg.src = res?.avatar_url;
       ProfileName.innerHTML = res?.name;
       description.innerHTML = res?.bio;
       priceElement.textContent = res?.location;
