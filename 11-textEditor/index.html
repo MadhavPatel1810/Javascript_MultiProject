@@ -34,19 +34,19 @@
         <h2>Type In Your Words</h2>
         <input type="text" id="input-field" placeholder="Type Your Text Here" />
       </div>
-
       <div class="btns-container">
-        <button class="btn uppercase">ABC</button>
-        <button class="btn lowercase">abc</button>
-        <button class="btn capitalize">Abc</button>
-        <button class="btn bold">B</button>
-        <button class="btn italic">/</button>
-        <button class="btn underline">ABC</button>
+        <button class="btn uppercase" data-action="uppercase">ABC</button>
+        <button class="btn lowercase" data-action="lowercase">abc</button>
+        <button class="btn capitalize" data-action="capitalize">Abc</button>
+        <button class="btn bold" data-action="bold">B</button>
+        <button class="btn italic" data-action="italic">/</button>
+        <button class="btn underline" data-action="underline">ABC</button>
       </div>
-
       <p id="output-field">Output</p>
+      <div
+        class="result-container d-flex justify-content-center text-white"
+      ></div>
     </div>
-
     <script src="textEditor.js"></script>
   </body>
 </html>

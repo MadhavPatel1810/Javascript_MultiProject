@@ -3,8 +3,8 @@
   }
   
   body {
-    background-color: #212121;
-    color: aliceblue;
+    background-color: #212121 !important;
+    color: aliceblue !important;
     display: flex;
     flex-direction: column;
     justify-content: center;

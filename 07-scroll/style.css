@@ -25,7 +25,7 @@
   }
   
   .scroll-indicator {
-    height: 5px;
+    height: 8px;
     width: calc(100% - 6em);
     position: fixed;
     top: 10px;

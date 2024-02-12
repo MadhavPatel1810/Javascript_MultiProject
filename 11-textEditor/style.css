@@ -6,7 +6,7 @@
   
   body {
     text-align: center;
-    background-color: #ccef;
+    background-color: #ccef !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,11 +15,11 @@
   
   .container {
     padding: 6rem;
-    background: black;
+    background: black !important;
   }
   
   .container h2 {
-    color: #fff;
+    color: #fff !important;
     font-family: sans-serif;
     font-size: 3rem;
     margin-bottom: 40px;
@@ -36,19 +36,28 @@
     padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
-    background-color: rgb(60, 59, 60);
-    color: #fff;
+    background-color: rgb(60, 59, 60) !important;
+    color: #fff !important;
     border: none;
     margin: 10px;
+  }
+
+  button:hover{
+    background-color: #ccef !important;
+  }
+
+  .btn.active {
+    background-color: #ccef !important;
+    color: black !important;
   }
   
   p {
     width: 400px;
     height: 400px;
-    background: #ccef;
-    color: #000;
+    background: #ccef !important;
+    color: #000 !important;
     height: 50px;
-    border: 1px solid #555;
+    border: 1px solid #555 !important;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -56,6 +65,7 @@
     margin: auto;
     margin-top: 2rem;
     font-family: sans-serif;
+    cursor: pointer;
   }
   
   .uppercase {

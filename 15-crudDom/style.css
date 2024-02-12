@@ -62,13 +62,15 @@
     padding: 10px;
   }
   
-  .btn {
+  .btn_check {
     background: #1a1919;
     border: none;
     color: #fff;
     margin-bottom: 20px;
     padding: 10px 20px;
     cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
   }
 
   nav {
