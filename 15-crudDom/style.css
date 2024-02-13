@@ -18,7 +18,7 @@
     width: 80%;
     height: 600px;
     padding: 20px;
-    color: white;
+    color: white !important;
     position: relative;
   }
   
@@ -33,14 +33,19 @@
   }
   
   .table {
-    background: #252323;
+    background: #252323 !important;
     width: 100%;
+    border-radius: 10px;
   }
   
   .table-section {
     display: flex;
     justify-content: space-around;
     padding: 10px;
+  }
+
+  #book-list   .table-section {
+    border-bottom: 1px solid #ccc !important;
   }
   
   #book-list {
@@ -49,8 +54,8 @@
     list-style: none;
     overflow: hidden;
     word-wrap: break-word;
-    background: #fff;
-    color: #000;
+    background: #fff !important;
+    color: #000 !important;
   }
   
   #book-list > section {
@@ -58,14 +63,14 @@
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ccc !important;
     padding: 10px;
   }
   
   .btn_check {
-    background: #1a1919;
+    background: #1a1919 !important;
     border: none;
-    color: #fff;
+    color: #fff !important;
     margin-bottom: 20px;
     padding: 10px 20px;
     cursor: pointer;
@@ -99,4 +104,10 @@
     color: #000;
     background-color: #d4d4d4;
   }
+
+.action button{
+  border: none;
+  margin-left: 8px;
+  margin-right: 8px;
+}
   
